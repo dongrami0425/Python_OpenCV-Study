@@ -1,0 +1,214 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>4468ecce-9d14-4f1f-a7ac-15040202bff8</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>22_Pakage_Manager\2_Crawling_by_using_pakage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>opentutorials_python2</Name>
+    <RootNamespace>opentutorials_python2</RootNamespace>
+    <InterpreterId>CondaEnv|CondaEnv|myenv36</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="04_conditional_statements\" />
+    <Folder Include="01_2_3_jupyternotebook\" />
+    <Folder Include="05_Input_and_Output\" />
+    <Folder Include="06_logic_operation\" />
+    <Folder Include="07_cheatsheet\" />
+    <Folder Include="08_container\" />
+    <Folder Include="09_loop_statement\" />
+    <Folder Include="10_container_and_loop\" />
+    <Folder Include="11_Source_code\" />
+    <Folder Include="12_Funtion\" />
+    <Folder Include="13_module\" />
+    <Folder Include="14_Object-Oriented Programming_OOP\" />
+    <Folder Include="15_make_object\" />
+    <Folder Include="15_make_object\15_1_using_object\" />
+    <Folder Include="15_make_object\15_2_class\" />
+    <Folder Include="15_make_object\15_3_constructor\" />
+    <Folder Include="15_make_object\15_4_instance_variable_and_method\" />
+    <Folder Include="15_make_object\15_5_why_use_object\" />
+    <Folder Include="16_object_and_variable\" />
+    <Folder Include="17_Inheritance\" />
+    <Folder Include="18_ClassMember\" />
+    <Folder Include="19_Override\" />
+    <Folder Include="20_Object_and_Module\" />
+    <Folder Include="21_Multiple_Inheritance\" />
+    <Folder Include="22_Pakage_Manager\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="10_container_and_loop\1_CL_Basic.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="10_container_and_loop\2_For_Basic.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="10_container_and_loop\3_For_range.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="10_container_and_loop\4_For_enumerate.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="10_container_and_loop\5_For_loginsys.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="10_container_and_loop\6_For_loginsys.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="12_Funtion\2_make_Function.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="12_Funtion\3_multiple_input_value.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="12_Funtion\4_makestring_loginsys.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="08_container\1_container_basicpy.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="05_Input_and_Output\1_IO_basic.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="05_Input_and_Output\2_IO_basic2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="06_logic_operation\1_or.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="06_logic_operation\2_and.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="07_cheatsheet\1_cheatsheet.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="08_container\2_Documentation.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="09_loop_statement\2_while.py" />
+    <Compile Include="09_loop_statement\1_while.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="09_loop_statement\3_while_and_conditional.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="09_loop_statement\4_while_conditional.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="09_loop_statement\5_while_conditional.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="13_module\1_intro_module.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="13_module\2_default_module.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="13_module\3_call_module.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="13_module\4_module_loginsys.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="13_module\auth.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="13_module\dongmin.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="15_make_object\15_1_using_object\1_use_object.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="15_make_object\15_2_class\2_use_object.py" />
+    <Compile Include="15_make_object\15_3_constructor\3_use_object.py" />
+    <Compile Include="16_object_and_variable\2_instance_variable_characteristic.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="16_object_and_variable\3_set_get_method.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="16_object_and_variable\4_why_use_set_get.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="16_object_and_variable\5_property.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="17_Inheritance\1_Inheritance.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="17_Inheritance\2_Inheritance_deepen.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="18_ClassMember\2_Class_method.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="18_ClassMember\3_Class_variable.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="18_ClassMember\4_ClassMember_deepen.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="19_Override\1_override_Form.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="19_Override\2_Override_deepen.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="20_Object_and_Module\1_Object_and_Module.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="20_Object_and_Module\lib.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="21_Multiple_Inheritance\1_Multiple_Inheritance_form.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="21_Multiple_Inheritance\2_Multiple_Inheritance_Disadvantage.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="21_Multiple_Inheritance\3_Multiple_Inheritance_deepen.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="22_Pakage_Manager\2_Crawling_by_using_pakage.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="11_Source_code\Source_code.txt" />
+    <Content Include="12_Funtion\1_what_is_function.txt" />
+    <Content Include="01_2_3_jupyternotebook\1_String_and_datatype-checkpoint.ipynb" />
+    <Content Include="01_2_3_jupyternotebook\2_Variable-checkpoint.ipynb" />
+    <Content Include="01_2_3_jupyternotebook\3_Comparison_operator_and_Boolean-checkpoint.ipynb" />
+    <Content Include="14_Object-Oriented Programming_OOP\1_OOP_INTRO.txt" />
+    <Content Include="15_make_object\1_related_word.txt" />
+    <Content Include="16_object_and_variable\1_encapsulation.txt" />
+    <Content Include="18_ClassMember\1_ClassMember_Intro.txt" />
+    <Content Include="19_Override\0_Override_Intro.txt" />
+    <Content Include="22_Pakage_Manager\0_Pakage_Manager.txt" />
+    <Content Include="22_Pakage_Manager\1_Pakage_Manager_PIP.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="CondaEnv|CondaEnv|myenv36" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

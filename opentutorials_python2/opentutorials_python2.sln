@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.757
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "opentutorials_python2", "opentutorials_python2\opentutorials_python2.pyproj", "{4468ECCE-9D14-4F1F-A7AC-15040202BFF8}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "JumptoPython", "JumptoPython\JumptoPython.pyproj", "{EDE44C14-ED0C-4CC0-B845-A2713B9E563F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4468ECCE-9D14-4F1F-A7AC-15040202BFF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4468ECCE-9D14-4F1F-A7AC-15040202BFF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDE44C14-ED0C-4CC0-B845-A2713B9E563F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDE44C14-ED0C-4CC0-B845-A2713B9E563F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {28D3CFDA-A3B0-4F8A-A3F6-7EB6DB1D7650}
+	EndGlobalSection
+EndGlobal
