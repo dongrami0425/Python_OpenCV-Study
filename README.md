@@ -1,0 +1,2 @@
+# opentutorials_python_basic
+생활코딩_파이썬강의_정리
