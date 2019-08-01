@@ -49,6 +49,15 @@
     <Folder Include="22_Pakage_Manager\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="04_conditional_statements\1_CS_Basic.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="04_conditional_statements\2_else.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="04_conditional_statements\3_elseif.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="10_container_and_loop\1_CL_Basic.py">
       <SubType>Code</SubType>
     </Compile>
@@ -158,6 +167,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="18_ClassMember\4_ClassMember_deepen.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="18_ClassMember\5_static_and_classmethod_difference.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="19_Override\1_override_Form.py">
