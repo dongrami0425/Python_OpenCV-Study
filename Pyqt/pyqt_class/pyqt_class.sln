@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.757
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "pyqt_class", "pyqt_class\pyqt_class.pyproj", "{F2218E1C-49E3-4B0A-A696-59041FB532D1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8516F2B7-F16A-4FE2-841C-C42567791F87}"
+	ProjectSection(SolutionItems) = preProject
+		pyqt_class\input_name.ui = pyqt_class\input_name.ui
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2218E1C-49E3-4B0A-A696-59041FB532D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2218E1C-49E3-4B0A-A696-59041FB532D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EE61F1A5-F4BC-45D5-AF8D-948AC0B48261}
+	EndGlobalSection
+EndGlobal
