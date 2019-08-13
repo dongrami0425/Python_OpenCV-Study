@@ -7,14 +7,14 @@
   3. insightbook.opencv_project_python의 오픈소스와 파이썬으로 만드는 OpenCV 프로젝트 교재 공부 내용
      - 오픈소스 출처  
 
-        This code is provided for the book <OpenCV Project using Python> published by Insight book Inc.   
-        This code is released under the MIT license, and is available on GitHub site below
+        This code is provided for the book <OpenCV Project using Python> published by Insight book Inc.     
+        This code is released under the MIT license, and is available on GitHub site below  
 
-        이 코드는 인사이트출판사에서 출판된 책 <파이썬으로 만드는 OpenCV 프로젝트>를 위해 제공합니다.
-        이 코드는 MIT 라이센스를 따르고 아래의 GitHub 주소에서도 받을 수 있습니다.
+        이 코드는 인사이트출판사에서 출판된 책 <파이썬으로 만드는 OpenCV 프로젝트>를 위해 제공합니다.  
+        이 코드는 MIT 라이센스를 따르고 아래의 GitHub 주소에서도 받을 수 있습니다.  
 
-        GitHub : https://github.com/dltpdn/book_opencv_prject_using_python
-        Author : Lee Sewoo(이세우, dltpdn@gmail.com)
+        GitHub : https://github.com/dltpdn/book_opencv_prject_using_python  
+        Author : Lee Sewoo(이세우, dltpdn@gmail.com)  
     
 
 - 설명  
