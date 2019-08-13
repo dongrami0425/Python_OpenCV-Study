@@ -1,6 +1,8 @@
+# [예제2-4] 동영상 파일 재생
+
 import cv2
 
-video_file = "../img/big_buck.avi" # 동영상 파일 경로
+video_file = "img/big_buck.avi" # 동영상 파일 경로
 
 cap = cv2.VideoCapture(video_file) # 동영상 캡쳐 객체 생성  ---①
 if cap.isOpened():                 # 캡쳐 객체 초기화 확인

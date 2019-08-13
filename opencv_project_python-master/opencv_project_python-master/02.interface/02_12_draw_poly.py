@@ -1,9 +1,12 @@
+# [예제2-12] 다각형 그리기
+# NumPy 배열에 대한 내용은 3장에서 설명.
+
 import cv2
 import numpy as np                          # 좌표 표현을 위한 numpy 모듈  ---①
 
-img = cv2.imread('../img/blank_500.jpg')
+img = cv2.imread('img/blank_500.jpg')
 
-# Numpy array로 좌표 생성 ---②
+# Numpy array로 좌표 생성 ---② 
 # 번개 모양 선 좌표
 pts1 = np.array([[50,50], [150,150], [100,140],[200,240]], dtype=np.int32) 
 # 삼각형 좌표

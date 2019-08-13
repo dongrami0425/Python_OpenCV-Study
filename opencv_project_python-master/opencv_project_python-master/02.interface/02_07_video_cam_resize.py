@@ -1,3 +1,6 @@
+# [예제2-7] 카메라 프레임 크기 설정
+# 카메라로부터 읽은 영상이 너무 고화질인 경우 픽셀 수를 프레임의 폭과 높이을 제어해서 줄일 수 있다. 
+
 import cv2
 
 cap = cv2.VideoCapture(0)                   # 카메라 0번 장치 연결
@@ -25,3 +28,7 @@ else:
     print("can't open camera!")
 cap.release()
 cv2.destroyAllWindows()
+
+'''
+아쉽게도 카메라가 아닌 동영상 파일에 프레임 크기를 재지정하는 것은 적용되지 않습니다.
+'''

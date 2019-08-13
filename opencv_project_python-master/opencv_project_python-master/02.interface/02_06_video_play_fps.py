@@ -1,6 +1,8 @@
+# [예제2-6] FPS를 지정해서 동영상 재생 
+
 import cv2
 
-video_file = "../img/big_buck.avi" # 동영상 파일 경로
+video_file = "img/big_buck.avi" # 동영상 파일 경로
 
 cap = cv2.VideoCapture(video_file) # 동영상 캡쳐 객체 생성
 if cap.isOpened():                 # 캡쳐 객체 초기화 확인
@@ -19,3 +21,6 @@ else:
     print("can't open video.")      # 캡쳐 객체 초기화 실패
 cap.release()                       # 캡쳐 자원 반납
 cv2.destroyAllWindows()
+
+
+# 아쉽게도 FPS 속성을 카메라 장치로 부터 읽을 때는 대부분 정상적인 값을 가져오지 못합니다.

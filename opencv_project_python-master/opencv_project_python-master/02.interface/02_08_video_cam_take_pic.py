@@ -1,3 +1,4 @@
+#[예제2-8] 카메라로 사진찍기
 import cv2
 
 cap = cv2.VideoCapture(0)                       # 0번 카메라 연결

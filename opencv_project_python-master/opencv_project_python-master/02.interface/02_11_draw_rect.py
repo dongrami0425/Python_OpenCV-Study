@@ -1,6 +1,7 @@
+# [예제 02-11] 사각형 그리기
 import cv2
 
-img = cv2.imread('../img/blank_500.jpg')
+img = cv2.imread('img/blank_500.jpg')
 
 # 좌상, 우하 좌표로 사각형 그리기
 cv2.rectangle(img, (50, 50), (150, 150), (255,0,0) )        
