@@ -5,7 +5,8 @@
   1. opentutorials에서 공부한 파이썬 강의
   2. JumptoPython에서 공부한 파이썬 공부 요약 
   3. insightbook.opencv_project_python의 오픈소스와 파이썬으로 만드는 OpenCV 프로젝트 교재 공부 내용
-     - 오픈소스 출처
+     - 오픈소스 출처  
+
         This code is provided for the book <OpenCV Project using Python> published by Insight book Inc.   
         This code is released under the MIT license, and is available on GitHub site below
 
