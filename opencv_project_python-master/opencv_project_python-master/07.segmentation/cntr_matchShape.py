@@ -2,8 +2,8 @@ import cv2
 import numpy as np
 
 # 매칭을 위한 이미지 읽기
-target = cv2.imread('../img/4star.jpg') # 매칭 대상
-shapes = cv2.imread('../img/shapestomatch.jpg') # 여러 도형
+target = cv2.imread('img/4star.jpg') # 매칭 대상
+shapes = cv2.imread('img/shapestomatch.jpg') # 여러 도형
 # 그레이 스케일 변환
 targetGray = cv2.cvtColor(target, cv2.COLOR_BGR2GRAY)
 shapesGray = cv2.cvtColor(shapes, cv2.COLOR_BGR2GRAY)
@@ -28,6 +28,13 @@ for contr in cntrs_shapes:
                     cv2.FONT_HERSHEY_PLAIN, 1,(0,0,255),1 )
 # 매칭 점수로 정렬 ---④
 matchs.sort(key=lambda x : x[0])
+matchs = np.array(matchs)
+
+print('matchs의 shape :', matchs.shape)
+print('정렬된 matchs 배열',matchs)
+print('정렬된 matchs의 match값만 확인 : ',matchs[0][0], matchs[1][0], matchs[2][0])
+print('target contour의 shape',np.shape(cntrs_target),'3개 도형의 contours의 shape', np.shape(cntrs_shapes))
+
 # 가장 적은 매칭 점수를 얻는 도형의 컨투어에 선 그리기 ---⑤
 cv2.drawContours(shapes, [matchs[0][1]], -1, (0,255,0), 3)
 cv2.imshow('target', target)

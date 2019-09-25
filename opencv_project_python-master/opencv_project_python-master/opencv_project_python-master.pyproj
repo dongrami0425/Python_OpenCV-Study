@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>9803f989-64e1-4602-a1da-6760456ff65a</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>02.interface\02_19_event_trackbar.py</StartupFile>
+    <StartupFile>07.segmentation\watershed_2.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -162,6 +162,9 @@
     <Compile Include="07.segmentation\cntr_hierarchy.py" />
     <Compile Include="07.segmentation\cntr_matchShape.py" />
     <Compile Include="07.segmentation\cntr_moment.py" />
+    <Compile Include="07.segmentation\colortest1.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="07.segmentation\connected_label.py" />
     <Compile Include="07.segmentation\distanceTrans.py" />
     <Compile Include="07.segmentation\flood_fill.py" />
@@ -171,6 +174,9 @@
     <Compile Include="07.segmentation\hough_lineP.py" />
     <Compile Include="07.segmentation\mean_shift.py" />
     <Compile Include="07.segmentation\watershed.py" />
+    <Compile Include="07.segmentation\watershed_2.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="07.segmentation\workshop_coin_count.py" />
     <Compile Include="07.segmentation\workshop_paper_scan.py" />
     <Compile Include="07.segmentation\workshop_shape.py" />

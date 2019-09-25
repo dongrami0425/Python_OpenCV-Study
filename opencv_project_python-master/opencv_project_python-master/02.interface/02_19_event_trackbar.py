@@ -20,9 +20,9 @@ def onChange(x):
     cv2.imshow(win_name, img)                           # 새 이미지 창에 표시
 
 # 트랙바 생성    --- ⑤
-cv2.createTrackbar('R', win_name, 255, 255, onChange)  
-cv2.createTrackbar('G', win_name, 255, 255, onChange)
-cv2.createTrackbar('B', win_name, 255, 255, onChange)
+cv2.createTrackbar('R', win_name, 0, 255, onChange)  
+cv2.createTrackbar('G', win_name, 0, 255, onChange)
+cv2.createTrackbar('B', win_name, 0, 255, onChange)
 
 while True:
     if cv2.waitKey(1) & 0xFF == 27:

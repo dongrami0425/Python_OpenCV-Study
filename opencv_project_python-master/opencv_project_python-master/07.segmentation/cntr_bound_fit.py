@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # 이미지 읽어서 그레이스케일 변환, 바이너리 스케일 변환
-img = cv2.imread("../img/lightning.png")
+img = cv2.imread("img/lightning.png")
 imgray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 ret, th = cv2.threshold(imgray, 127,255,cv2.THRESH_BINARY_INV)
 
@@ -31,6 +31,7 @@ cv2.polylines(img, [np.int32(tri)], True, (255,0,255), 2)
 
 # 최소한의 타원 표시(노랑색)
 ellipse = cv2.fitEllipse(contr)
+print(ellipse)
 cv2.ellipse(img, ellipse, (0,255,255), 3)
 
 # 중심점 통과하는 직선 표시(빨강색)

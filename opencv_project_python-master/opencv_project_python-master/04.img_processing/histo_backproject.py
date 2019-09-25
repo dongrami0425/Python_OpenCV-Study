@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 win_name = 'back_projection'
-img = cv2.imread('../img/pump_horse.jpg')
+img = cv2.imread('img/pump_horse.jpg')
 hsv_img = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 draw = img.copy()
 
@@ -42,7 +42,7 @@ def backProject_cv(hist_roi):
 (x,y,w,h) = cv2.selectROI(win_name, img, False)
 if w > 0 and h > 0:
     roi = draw[y:y+h, x:x+w]
-    cv2.rectangle(draw, (x, y), (x+w, y+h), (0,0,255), 2)
+    cv2.rectangle(roi, (x, y), (x+w, y+h), (0,0,255), 2)
     #--② 선택한 ROI를 HSV 컬러 스페이스로 변경
     hsv_roi = cv2.cvtColor(roi, cv2.COLOR_BGR2HSV)
     #--③ H,S 채널에 대한 히스토그램 계산

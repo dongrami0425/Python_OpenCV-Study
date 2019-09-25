@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import matplotlib.pylab as plt
 
-img = cv2.imread('../img/gray_gradient.jpg', cv2.IMREAD_GRAYSCALE)
+img = cv2.imread('img/gray_gradient.jpg', cv2.IMREAD_GRAYSCALE)
 
 _, t_bin = cv2.threshold(img, 127, 255, cv2.THRESH_BINARY)
 _, t_bininv = cv2.threshold(img, 127, 255, cv2.THRESH_BINARY_INV)

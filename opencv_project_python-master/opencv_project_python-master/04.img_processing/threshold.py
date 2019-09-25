@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import matplotlib.pylab as plt
 
-img = cv2.imread('../img/gray_gradient.jpg', cv2.IMREAD_GRAYSCALE) #이미지를 그레이 스케일로 읽기
+img = cv2.imread('img/gray_gradient.jpg', cv2.IMREAD_GRAYSCALE) #이미지를 그레이 스케일로 읽기
 
 # --- ① NumPy API로 바이너리 이미지 만들기
 thresh_np = np.zeros_like(img)   # 원본과 동일한 크기의 0으로 채워진 이미지

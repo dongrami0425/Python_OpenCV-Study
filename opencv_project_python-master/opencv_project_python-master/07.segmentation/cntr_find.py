@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-img = cv2.imread('../img/shapes.png')
+img = cv2.imread('img/shapes.png')
 img2 = img.copy()
 
 # 그레이 스케일로 변환 ---①
@@ -28,10 +28,14 @@ for i in contour:
     for j in i:
         cv2.circle(img, tuple(j[0]), 1, (255,0,0), -1) 
 
+print(contour)
+
 # 컨투어 꼭지점 좌표를 작은 파랑색 점(원)으로 표시 ---⑨
 for i in contour2:
     for j in i:
         cv2.circle(img2, tuple(j[0]), 1, (255,0,0), -1) 
+
+print(contour2)
 
 # 결과 출력 ---⑩
 cv2.imshow('CHAIN_APPROX_NONE', img)

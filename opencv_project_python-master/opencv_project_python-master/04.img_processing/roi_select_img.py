@@ -1,8 +1,10 @@
 import cv2,  numpy as np
 
-img = cv2.imread('../img/sunset.jpg')
+img = cv2.imread('img/sunset.jpg')
 
 x,y,w,h	=	cv2.selectROI('img', img, False)
+#x,y,w,h	=	cv2.selectROI('img', img, True)
+
 if w and h:
     roi = img[y:y+h, x:x+w]
     cv2.imshow('cropped', roi)  # ROI 지정 영역을 새창으로 표시

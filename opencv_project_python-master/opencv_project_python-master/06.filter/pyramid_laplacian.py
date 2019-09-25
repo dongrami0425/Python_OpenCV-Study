@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-img = cv2.imread('../img/taekwonv1.jpg')
+img = cv2.imread('img/taekwonv1.jpg')
 
 # 원본 영상을 가우시안 피라미드로 축소
 smaller = cv2.pyrDown(img)

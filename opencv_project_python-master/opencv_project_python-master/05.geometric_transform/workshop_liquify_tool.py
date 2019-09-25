@@ -71,7 +71,7 @@ def onMouse(event,x,y,flags,param):
             cv2.imshow(win_title, img)
 
 if __name__ == '__main__' :
-    img = cv2.imread("../img/man_face.jpg")
+    img = cv2.imread("img/man_face.jpg")
     h, w = img.shape[:2]
 
     cv2.namedWindow(win_title)

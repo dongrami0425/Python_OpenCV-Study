@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-img = cv2.imread('../img/gaussian_noise.jpg')
+img = cv2.imread('img/gaussian_noise.jpg')
 
 # 가우시안 커널을 직접 생성해서 블러링  ---①
 k1 = np.array([[1, 2, 1],
@@ -18,6 +18,8 @@ blur3 = cv2.GaussianBlur(img, (3, 3), 0)
 
 # 결과 출력
 print('k1:', k1)
+print('k2:', k2)
+print('k2.T:',k2.T)
 print('k2:', k2*k2.T)
 merged = np.hstack((img, blur1, blur2, blur3))
 cv2.imshow('gaussian blur', merged)
