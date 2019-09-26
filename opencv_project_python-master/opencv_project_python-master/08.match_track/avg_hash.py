@@ -1,7 +1,7 @@
 import cv2
 
 #영상 읽어서 그레이 스케일로 변환
-img = cv2.imread('../img/pistol.jpg')
+img = cv2.imread('img/pistol.jpg')
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 # 8x8 크기로 축소 ---①
@@ -17,6 +17,8 @@ dhash = []
 for row in bin.tolist():
     s = ''.join([str(i) for i in row])
     dhash.append('%02x'%(int(s,2)))
+    print(dhash)
+
 dhash = ''.join(dhash)
 print(dhash)
 

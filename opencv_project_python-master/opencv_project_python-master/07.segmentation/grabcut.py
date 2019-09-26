@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-img = cv2.imread('../img/taekwonv1.jpg')
+img = cv2.imread('img/taekwonv1.jpg')
 img_draw = img.copy()
 mask = np.zeros(img.shape[:2], dtype=np.uint8)  # 마스크 생성
 rect = [0,0,0,0]    # 사각형 영역 좌표 초기화
@@ -45,6 +45,10 @@ def onMouse(event, x, y, flags, param):
             cv2.imshow('img', img_draw)
         # 그랩컷 적용 ---⑧
         cv2.grabCut(img, mask, tuple(rect), bgdmodel, fgdmodel, 1, mode)
+
+        print('mask.shape:',mask.shape,'mask:',mask)
+        print('fgd buffer : ',fgdmodel,'bgd buffer : ',bgdmodel)
+
         img2 = img.copy()
         # 마스크에 확실한 배경, 아마도 배경으로 표시된 영역을 0으로 채우기
         img2[(mask==cv2.GC_BGD) | (mask==cv2.GC_PR_BGD)] = 0
