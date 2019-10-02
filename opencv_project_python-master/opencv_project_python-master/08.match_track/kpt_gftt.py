@@ -1,13 +1,14 @@
 import cv2
 import numpy as np
  
-img = cv2.imread("../img/house.jpg")
+img = cv2.imread("img/house.jpg")
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 # Good feature to trac 검출기 생성 ---①
 gftt = cv2.GFTTDetector_create() 
 # 키 포인트 검출 ---②
 keypoints = gftt.detect(gray, None)
+print('keypoint.shape :',np.shape(keypoints),'keypoints :', keypoints)
 # 키 포인트 그리기 ---③
 img_draw = cv2.drawKeypoints(img, keypoints, None)
 

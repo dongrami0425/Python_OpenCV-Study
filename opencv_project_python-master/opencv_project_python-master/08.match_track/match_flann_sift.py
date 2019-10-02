@@ -1,7 +1,7 @@
 import cv2, numpy as np
 
-img1 = cv2.imread('../img/taekwonv1.jpg')
-img2 = cv2.imread('../img/figures.jpg')
+img1 = cv2.imread('img/taekwonv1.jpg')
+img2 = cv2.imread('img/figures.jpg')
 gray1 = cv2.cvtColor(img1, cv2.COLOR_BGR2GRAY)
 gray2 = cv2.cvtColor(img2, cv2.COLOR_BGR2GRAY)
 
@@ -18,6 +18,9 @@ search_params = dict(checks=50)
 
 # Flann 매처 생성 ---③
 matcher = cv2.FlannBasedMatcher(index_params, search_params)
+print('index_params :',index_params,'search_params : ',search_params)
+# index_params : {'algorithm': 1, 'trees': 5} search_params :  {'checks': 50}
+
 # 매칭 계산 ---④
 matches = matcher.match(desc1, desc2)
 # 매칭 그리기
