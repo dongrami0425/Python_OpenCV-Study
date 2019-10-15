@@ -1,7 +1,7 @@
 import cv2, numpy as np
 
-img1 = cv2.imread('../img/taekwonv1.jpg')
-img2 = cv2.imread('../img/figures.jpg')
+img1 = cv2.imread('img/taekwonv1.jpg')
+img2 = cv2.imread('img/figures.jpg')
 gray1 = cv2.cvtColor(img1, cv2.COLOR_BGR2GRAY)
 gray2 = cv2.cvtColor(img2, cv2.COLOR_BGR2GRAY)
 

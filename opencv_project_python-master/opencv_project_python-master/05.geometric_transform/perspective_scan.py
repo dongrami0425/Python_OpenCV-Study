@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 win_name = "scanning"
-img = cv2.imread("../img/paper.jpg")
+img = cv2.imread("img/paper.jpg")
 rows, cols = img.shape[:2]
 draw = img.copy()
 pts_cnt = 0
@@ -19,7 +19,9 @@ def onMouse(event, x, y, flags, param):  #마우스 이벤트 콜백 함수 구�
         if pts_cnt == 4:                       # 좌표가 4개 수집됨 
             # 좌표 4개 중 상하좌우 찾기 ---② 
             sm = pts.sum(axis=1)                 # 4쌍의 좌표 각각 x+y 계산
+            print('sm : ',sm)
             diff = np.diff(pts, axis = 1)       # 4쌍의 좌표 각각 x-y 계산
+            print('diff : ', diff)
 
             topLeft = pts[np.argmin(sm)]         # x+y가 가장 값이 좌상단 좌표
             bottomRight = pts[np.argmax(sm)]     # x+y가 가장 큰 값이 좌상단 좌표
@@ -28,6 +30,8 @@ def onMouse(event, x, y, flags, param):  #마우스 이벤트 콜백 함수 구�
 
             # 변환 전 4개 좌표 
             pts1 = np.float32([topLeft, topRight, bottomRight , bottomLeft])
+            print(pts1)
+            #print(pts.index[])
 
             # 변환 후 영상에 사용할 서류의 폭과 높이 계산 ---③ 
             w1 = abs(bottomRight[0] - bottomLeft[0])    # 상단 좌우 좌표간의 거리
