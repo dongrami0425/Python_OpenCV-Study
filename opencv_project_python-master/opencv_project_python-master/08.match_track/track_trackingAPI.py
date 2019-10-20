@@ -14,10 +14,10 @@ tracker = None
 isFirst = True
 
 video_src = 0 # 비디오 파일과 카메라 선택 ---②
-#video_src = "../img/highway.mp4"
+#video_src = "img/highway.mp4" #비디오 사용시 주석제거
 cap = cv2.VideoCapture(video_src)
-fps = cap.get(cv2.CAP_PROP_FPS) # 프레임 수 구하기
-delay = int(1000/fps)
+#fps = cap.get(cv2.CAP_PROP_FPS) # 프레임 수 구하기 #비디오 사용시 주석제거
+#delay = int(1000/fps) #비디오 사용시 주석제거
 win_name = 'Tracking APIs'
 while cap.isOpened():
     ret, frame = cap.read()
@@ -31,6 +31,7 @@ while cap.isOpened():
     else:
         ok, bbox = tracker.update(frame)   # 새로운 프레임에서 추적 위치 찾기 ---③
         (x,y,w,h) = bbox
+        print("bbox datatype : ", type(bbox), 'bbox : ', bbox)
         if ok: # 추적 성공
             cv2.rectangle(img_draw, (int(x), int(y)), (int(x + w), int(y + h)), \
                           (0,255,0), 2, 1)
@@ -40,9 +41,13 @@ while cap.isOpened():
     trackerName = tracker.__class__.__name__
     cv2.putText(img_draw, str(trackerIdx) + ":"+trackerName , (100,20), \
                  cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0,255,0),2,cv2.LINE_AA)
-
+    
+    # 카메라 사용시 좌우 반전 #비디오 사용시 주석처리 할 것
+    img_draw = cv2.flip(img_draw, 1) # 1은 좌우 반전, 0은 상하 반전입니다.
+   
     cv2.imshow(win_name, img_draw)
-    key = cv2.waitKey(delay) & 0xff
+    #key = cv2.waitKey(delay) & 0xff #비디오 사용시 주석제거
+    key = cv2.waitKey(1) & 0xff
     # 스페이스 바 또는 비디오 파일 최초 실행 ---④
     if key == ord(' ') or (video_src != 0 and isFirst): 
         isFirst = False

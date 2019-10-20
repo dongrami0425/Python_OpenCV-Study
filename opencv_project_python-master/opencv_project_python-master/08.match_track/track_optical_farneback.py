@@ -3,9 +3,12 @@ import cv2, numpy as np
 # 플로우 결과 그리기 ---①
 def drawFlow(img,flow,step=16):
   h,w = img.shape[:2]
+  print('h, w', h ,',', w)
   # 16픽셀 간격의 그리드 인덱스 구하기 ---②
   idx_y,idx_x = np.mgrid[step/2:h:step,step/2:w:step].astype(np.int)
+  #print('idx_y',idx_y,'idx_y.shape',np.shape(idx_y),'idx_x',idx_x,'idx_x.shape',np.shape(idx_x))
   indices =  np.stack( (idx_x,idx_y), axis =-1).reshape(-1,2)
+  #print('indices :', indices)
   
   for x,y in indices:   # 인덱스 순회
     # 각 그리드 인덱스 위치에 점 그리기 ---③
@@ -18,7 +21,7 @@ def drawFlow(img,flow,step=16):
 
 prev = None # 이전 프레임 저장 변수
 
-cap = cv2.VideoCapture('../img/walking.avi')
+cap = cv2.VideoCapture('img/walking.avi')
 fps = cap.get(cv2.CAP_PROP_FPS) # 프레임 수 구하기
 delay = int(1000/fps)
 

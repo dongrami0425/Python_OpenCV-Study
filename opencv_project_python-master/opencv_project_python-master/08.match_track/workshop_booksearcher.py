@@ -21,7 +21,22 @@ def serch(img):
     
     results = {}
     # 책 커버 보관 디렉토리 경로 ---⑤
-    cover_paths = glob.glob('../img/books/*.*')
+    cover_paths = glob.glob('img/books/*.*')
+    print('cover_paths = 책 그림파일 경로 : ', cover_paths)
+    
+    '''
+    cover_paths = ['img/books\\book0.jpg', 'img/books\\book1.jpg', 'img/books\\book10.jpg', 
+                   'img/books\\book11.jpg', 'img/books\\book12.jpg', 'img/books\\book13.jpg', 
+                   'img/books\\book14.jpg', 'img/books\\book15.jpg', 'img/books\\book16.jpg', 
+                    ...
+                    ...
+                    ...
+                   'img/books\\book41.jpg', 'img/books\\book42.jpg', 'img/books\\book43.jpg', 
+                   'img/books\\book44.jpg', 'img/books\\book45.jpg', 'img/books\\book46.jpg', 
+                   'img/books\\book73.jpg', 'img/books\\book8.jpg', 'img/books\\book9.jpg']
+    '''
+
+    
     for cover_path in cover_paths:
         cover = cv2.imread(cover_path)
         cv2.imshow('Searching...', cover) # 검색 중인 책 표지 표시 ---⑥
