@@ -1,5 +1,5 @@
 # opentutorials_python_basic
-생활코딩_파이썬강의 및 교재를 이용한 개인 
+생활코딩_파이썬강의 및 교재를 이용한 개인 공부 자료
 
 - Part  
   1. opentutorials에서 공부한 파이썬 강의
