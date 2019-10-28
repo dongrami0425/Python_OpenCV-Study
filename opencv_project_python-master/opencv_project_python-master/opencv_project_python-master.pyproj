@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>9803f989-64e1-4602-a1da-6760456ff65a</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>08.match_track\workshop_booksearcher.py</StartupFile>
+    <StartupFile>09.ml\k-means_color.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
