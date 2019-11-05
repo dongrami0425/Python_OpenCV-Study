@@ -320,8 +320,7 @@ for image_path in TEST_IMAGE_PATHS:
   obeject_y_max = max(y_max_box)      # y_max_box 리스트에 있는 값중에 최대 값을 뽑아낸다.
   obeject_x_max = max(x_max_box)
 
-  real_box = [obeject_y_min, obeject_x_min, obeject_y_max, obeject_x_max]   #최종 box의 좌표가 저장된다. 레알임
-
+  real_box = [obeject_y_min, obeject_x_min, obeject_y_max, obeject_x_max]   #최종 box의 좌표가 저장된다.
 
   cent_x = float(tmp_center[0])/r   # 위의 반복문 안에서 더해진 중심값들을 피사체의 갯수만큼 나눠 준다.
   cent_y = float(tmp_center[1])/r
@@ -348,6 +347,7 @@ for image_path in TEST_IMAGE_PATHS:
 
 
 #---------------------------------------------------------------
+  # 이미지 Cropping에 필요한 변수 처리 과정
   # 높이 너비 저장
   # height, width = img.shape[0:2]
 
@@ -1345,13 +1345,13 @@ def frame_offset_funtion(width, height, x, y, a, b, c, d, q, w, e, r):
         frame_ymin = frame_ymin - overpadding_ymax
         frame_ymax = frame_ymax - overpadding_ymax
 
-    print("offset 임무완료")
+    print("offset 완료")
     return (frame_xmin, frame_ymin, frame_xmax, frame_ymax)
 
 
 
 
-# -------------------------------------------------------------------------------------------------------------------run
+# ----main------
 
 
 if object_width >= (0.4 * full_width) or object_height >= (0.4 * full_height): #원본사진에 비해 피사체의 크기가 작은경우
