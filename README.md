@@ -16,8 +16,11 @@
         GitHub : https://github.com/dltpdn/book_opencv_prject_using_python  
         Author : Lee Sewoo(이세우, dltpdn@gmail.com)  
     
-
+  4. Capstone Project : [Digital Image Processing] Deep learning networks for Image Aesthetic Improvement
+      - Main source.py Paths : capstoneproject\firstnw\models\research\object_detection\capstone_project_final.py
+      - 해당 소스파일은 개발 도구 PyCharm 사용. Anaconda 가상환경을 통한 Tensorflow 활용
 - 설명  
   1. opentutorials의 강의가 main이 되며 jumptopython 교재를 통해 세부적인 기능을 정리 하였다.
   2. jumptopython 항목은 교재의 모든 내용을 담지 않으며 opentutorials 강의와 겹치는 내용은 생략하였다.
   3. 파이썬으로 만드는 OpenCV 프로젝트 교재에 대한 실습자료를 주석을 추가하여 업로드.
+  4. 2018년 광운대학교 졸업 Capstone Project : [Digital Image Processing] Deep learning networks for Image Aesthetic Improvement
