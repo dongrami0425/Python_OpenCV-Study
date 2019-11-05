@@ -16,7 +16,8 @@
         GitHub : https://github.com/dltpdn/book_opencv_prject_using_python  
         Author : Lee Sewoo(이세우, dltpdn@gmail.com)  
     
-
+  4. Capstone Project : [Digital Image Processing] Deep learning networks for Image Aesthetic Improvement
+  
 - 설명  
   1. opentutorials의 강의가 main이 되며 jumptopython 교재를 통해 세부적인 기능을 정리 하였다.
   2. jumptopython 항목은 교재의 모든 내용을 담지 않으며 opentutorials 강의와 겹치는 내용은 생략하였다.
